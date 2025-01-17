@@ -36,7 +36,7 @@ async function fetchContact(authToken, contactId) {
     });
 };
 
-describe('End to End Contact To Do test cases', () => {
+describe(['E2E_API', 'API'], 'End to End Contact To Do test cases', () => {
     let contactId = '';
 
     beforeEach(() => {

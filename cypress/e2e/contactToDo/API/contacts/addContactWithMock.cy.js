@@ -40,7 +40,7 @@ const validateAddContactResponse = (response) => {
   cy.wrap(response.body).should("have.property", "_id").and("not.be.undefined");
 };
 
-describe("Add contact - use mock login api", () => {
+describe(["API"], "Add contact - use mock login api", () => {
   let pwd = "";
   let user;
 

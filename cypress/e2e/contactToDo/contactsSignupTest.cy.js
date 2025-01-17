@@ -3,7 +3,7 @@ import { contactListPage } from "../../pages/contactToDo/contactsListPage";
 import { todoLoginPage } from "../../pages/contactToDo/loginPage";
 import { signUpPage } from "../../pages/contactToDo/signUp";
 
-describe("Contact To Do Sign Up Tests", () => {
+describe(['SignUp_UI'], "Contact To Do Sign Up Tests", () => {
   beforeEach(() => {
     cy.clearCookies();
     cy.clearAllLocalStorage();

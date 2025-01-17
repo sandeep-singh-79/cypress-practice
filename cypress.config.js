@@ -1,4 +1,5 @@
 const { defineConfig } = require("cypress");
+import {tagify} from 'cypress-tags';
 
 module.exports = defineConfig({
   e2e: {
@@ -10,6 +11,7 @@ module.exports = defineConfig({
       // Add plugins here (e.g., for Allure reporting)
       /* require("@shelex/cypress-allure-plugin/writer")(on, config); */
       require("cypress-mochawesome-reporter/plugin")(on);
+      on("file:preprocessor", tagify(config));
       return config;
     },
     env: {

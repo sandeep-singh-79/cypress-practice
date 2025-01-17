@@ -8,7 +8,7 @@ function loginToDoUser(user) {
 }
 
 
-describe("Add Contact to Contact List", () => {
+describe(['API'], "Add Contact to Contact List", () => {
   beforeEach(() => {
     // login with the user in the fixture user.json
     cy.fixture("contactsToDo/user.json").then((user) => {
